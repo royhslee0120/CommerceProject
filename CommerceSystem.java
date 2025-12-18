@@ -62,7 +62,7 @@ public class CommerceSystem {
             }
 
             Product selectedProduct = products.get(productChoice - 1);
-            System.out.println("선택한 상품: " + selectedProduct.toDetailSting());
+            System.out.println("선택한 상품: " + selectedProduct.toDetailString()); // 오타 수정
         }
     }
 
