@@ -17,10 +17,10 @@ public class Main {
         categories.add(clothes);
         categories.add(food);
 
-        electronics.addProduct(new Product("Galaxy S25", 1200000, "최신 안드로이드 스마트폰",50));
+        electronics.addProduct(new Product("Galaxy S25", 1200000, "최신 안드로이드 스마트폰",25));
         electronics.addProduct(new Product("iPhone 17", 1350000, "Apple의 최신 스마트폰",30));
-        electronics.addProduct(new Product("MacBook Pro", 2400000, "M3 칩셋이 탑재된 노트북",20));
-        electronics.addProduct(new Product("AirPods", 350000, "노이즈 캔슬링 무선 이어폰",40));
+        electronics.addProduct(new Product("MacBook Pro", 2400000, "M3 칩셋이 탑재된 노트북",15));
+        electronics.addProduct(new Product("AirPods", 350000, "노이즈 캔슬링 무선 이어폰",50));
 
         CommerceSystem commerceSystem = new CommerceSystem(categories);
         commerceSystem.start();

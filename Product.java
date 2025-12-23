@@ -19,7 +19,16 @@ public class Product {
     public String getInfo() { return info; }
     public int getAmount() { return amount; }
 
-    @Override
+    public boolean hasStock(int qty) {
+        return amount >= qty;
+    }
+
+    public void decreaseStock(int qty) {
+        if (qty <= 0) throw new IllegalArgumentException("수량은 1 이상이어야 합니다.");
+        if (!hasStock(qty)) throw new IllegalStateException("재고가 부족합니다.");
+        amount -= qty;
+    }
+
     public String toString() {
         return String.format("%-11s | %,10d원 | %s", name, price, info);
     }
@@ -28,4 +37,7 @@ public class Product {
         return String.format("%-11s | %,10d원 | %s | 재고: %d개", name, price, info, amount);
     }
 
+    public String toCartString() {
+        return String.format("%s | %,d원 | %s", name, price, info);
+    }
 }
