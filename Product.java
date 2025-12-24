@@ -19,6 +19,21 @@ public class Product {
     public String getInfo() { return info; }
     public int getAmount() { return amount; }
 
+    public void setPrice(int price) {
+        if (price < 0) throw new IllegalArgumentException("가격은 0 이상이어야 합니다.");
+        this.price = price;
+    }
+
+    public void setInfo(String info) {
+        if (info == null || info.isBlank()) throw new IllegalArgumentException("설명은 비어 있을 수 없습니다.");
+        this.info = info;
+    }
+
+    public void setAmount(int amount) {
+        if (amount < 0) throw new IllegalArgumentException("재고는 0 이상이어야 합니다.");
+        this.amount = amount;
+    }
+
     public boolean hasStock(int qty) {
         return amount >= qty;
     }

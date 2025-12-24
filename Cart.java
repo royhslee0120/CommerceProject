@@ -36,4 +36,8 @@ public class Cart {
     public void clear() {
         items.clear();
     }
+
+    public boolean removeProduct(Product product) {
+        return items.removeIf(item -> item.getProduct() == product);
+    }
 }
