@@ -21,6 +21,10 @@ public class Category {
         products.add(product);
     }
 
+    public boolean removeProduct(Product product) {
+        return products.remove(product);
+    }
+
     @Override
     public String toString() {
         return String.format("%s", name);
