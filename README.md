@@ -1,6 +1,6 @@
 ```
 src
-├─ main
+└─ main
    ├── java
    │   └── com
    │       └── paymentteamproject
