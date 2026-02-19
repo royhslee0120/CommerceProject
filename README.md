@@ -24,20 +24,7 @@ src
    │           │   └── CustomUserDetailsService.java
    │           └── domain
    │               ├── auth                ← 인증 (JWT, Refresh Token)
-   │               │   ├── controller
-   │               │   ├── service
-   │               │   ├── entity
-   │               │   ├── repository
-   │               │   ├── dto
-   │               │   ├── util
-   │               │   └── exception
    │               ├── user                ← 사용자 (포인트, 총 거래액)
-   │               │   ├── controller
-   │               │   ├── service
-   │               │   ├── entity
-   │               │   ├── repository
-   │               │   ├── consts
-   │               │   └── exception
    │               ├── product             ← 상품 (재고 관리)
    │               ├── order               ← 주문 (주문번호 자동생성)
    │               ├── orderProduct        ← 주문-상품 매핑
